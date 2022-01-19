@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            margin: 0;
+
+        }
+
+        header{
+            background-color: blueviolet;
+            height: 115vh;
+            position: relative;
+        }
+
+        main{
+            background-color: white;
+            height: 100vh;
+            position: relative;
+        }
+        #contenido{
+            position: relative;
+            left: 30%;
+        }
+
+        #contenedor-titulo{
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #titulo{
+            color: white;
+            font-size: 50px;
+            z-index: 1;
+            margin: 0 auto;
+        }
+
+        #video-fondo{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #video-contenido{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #contenido{
+            margin: 20px;
+            position: relative;
+            left: 300px;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="contenedor-titulo">
+            <div id="titulo">
+                <h1>Mi Página Web</h1>
+            </div>
+        </div>
+        <div id="video-fondo">
+            <video src="video/Pexels Videos 4657.mp4" width="100%" height="" autoplay muted loop preload="auto" ></video>
+        </div>
+    </header>
+
+    <main>
+        <div id="video-contenido">
+            <video id="contenido" src="video/production ID_4524595.mp4" width="500px" height="380px" controls poster=""></video>
+            <video id="contenido" src="video/production ID_4524595.mp4" width="500px" height="380px" controls poster=""></video>
+        </div>
+    </main>
+
+</body>
+</html>

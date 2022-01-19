@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        #elemento{
+            width: 300px;
+            height: 30px;
+        }
+
+        #elemento::-webkit-media-controls-panel{
+            background-color: blueviolet;
+        }
+
+        #elemento::-webkit-media-controls-play-button{
+            margin-left: 9px;
+            margin-right: 9px;
+            background-color: greenyellow;
+        }
+
+        #elemento::-webkit-media-controls-current-time-display,
+        #elemento::-webkit-media-controls-time-remaining-display {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: normal;
+            color: black;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi página web</h1>
+        <audio src="audio/fondo.ogg" autoplay preload="auto"></video>
+    </header>
+    <container>
+        <audio id="elemento" controls autoplay>
+            <source src="audio/puerta apertura con llave en cerradura 5.mp3" type="audio/mpeg">
+            <source src="audio/fondo.ogg" type="audio/ogg">
+        </audio>
+    </container>
+
+</body>
+</html>
